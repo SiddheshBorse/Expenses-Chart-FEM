@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Overpass:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
-:root{
---Soft-red: hsl(10, 79%, 65%) ;
---Cyan: hsl(186, 34%, 60%);
---Dark-brown: hsl(25, 47%, 15%) ;
---Medium-brown: hsl(28, 10%, 53%) ;
---Cream: hsl(27, 66%, 92%) ;
---Very-pale-orange: hsl(33, 100%, 98%);
+
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
-    
+
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
     background-color: var(--Cream);
@@ -25,134 +30,189 @@ body{
     justify-content: centre;
     align-items: center;
     flex-direction: column;
-    
+
 }
-.wrapper{
+
+.wrapper {
     margin: 4rem;
-    display:inline-block;
+    display: inline-block;
     width: 30%;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.balance{
+
+.balance {
     background-color: var(--Soft-red);
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.8rem;
     border-radius: 1rem;
-    
+
 }
-.balance h1{
+
+.balance h1 {
     font-size: 1.5rem;
 }
-.balance h2{
+
+.balance h2 {
     font-size: 2.5rem;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 
 }
-.circle1{
-    border:3px solid white ;
-    overflow:auto;
-    height:4rem;
+
+.circle1 {
+    border: 3px solid white;
+    overflow: auto;
+    height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    transform: translate(50%,0);
+    transform: translate(50%, 0);
 }
-.circle2{
+
+.circle2 {
     background-color: black;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
 }
-ul{
+
+ul {
     display: flex;
-    flex-direction: row                                                                       ;
+    flex-direction: row;
 
     justify-content: space-around;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.datarepresent{
+.datarepresent {
     height: 10rem;
     background-color: var(--Soft-red);
     width: 3rem;
     border-radius: 0.3rem;
 }
-.infographics{
-    background-color:  var(--Very-pale-orange);
+
+.infographics {
+    background-color: var(--Very-pale-orange);
     margin-top: 2rem;
     border-radius: 1rem;
 }
-.infographics h1{
+
+.infographics h1 {
     margin-bottom: 1rem;
     font-weight: 700;
     font-size: 2rem;
     padding-top: 1rem;
     padding-left: 2rem;
 }
-.infodata{
-height:13rem;
-display: flex;
-flex-direction: column;
-justify-content: end;
+
+.infodata {
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
-.line{
-    height:0.1rem;
-    width:90%;
+
+.line {
+    height: 0.1rem;
+    width: 90%;
     background-color: var(--Cream);
     margin-left: 5%;
     margin-top: 1.5rem;
 }
-.footer{
+
+.footer {
 
     display: flex;
     justify-content: space-between;
     padding: 2rem;
 }
-.total h2{
+
+.total h2 {
     font-size: 1rem;
     font-weight: 400;
     opacity: 0.5;
 }
-.total h3{
+
+.total h3 {
     font-size: 3rem;
     font-weight: 700;
 }
 
-.percentage{
+.percentage {
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
 }
-.percentage h3{
+
+.percentage h3 {
     font-size: 1.5rem;
-        font-weight: 700;
-}
-.percentage h2 {
-    font-size: 1rem;
-        font-weight: 400;
-        opacity: 0.5;
+    font-weight: 700;
 }
 
-.datarepresent:hover{
-    background-color:hsl(10, 79%, 75%);
+.percentage h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.datarepresent:hover {
+    background-color: hsl(10, 79%, 75%);
     cursor: pointer;
 }
-.datarepresent:focus{
+
+.datarepresent:focus {
     background-color: cyan;
 }
-.weekday{
+
+.weekday {
     opacity: 50%;
 }
-.datawrapper{
+
+.datawrapper {
     display: flex;
-        flex-direction: column;
-        justify-content: end; 
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 1350px) {
+    body {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .wrapper {
+            width: 70%;
+        }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .datarepresent {
+        width: 2rem;
+    }
+
+    .total h3 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
 }
